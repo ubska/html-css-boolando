@@ -22,6 +22,7 @@
         align-items: center;
         width: 80%;
         margin: 0 auto;
+        height: 100px;
     }
 
     nav ul {
@@ -40,3 +41,24 @@
         text-align: center;
     }
 /* header END */
+
+/* main START */
+main{
+    width: 80%;
+    margin: 50px auto;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 32%;
+    min-height: 200px;
+    margin-bottom: 20px;
+    background-color: bisque;
+}
+/* main END */
