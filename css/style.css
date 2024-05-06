@@ -4,21 +4,30 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: roboto;
+}
  /* rule link */
  a {
      text-decoration: none;
      color: white;
+     font-size: 30px;
  }
 
 
 /* header START */
     header{
         background-color: #ff6900;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
     }
 
     nav{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 80%;
         margin: 0 auto;
@@ -40,10 +49,18 @@
     .logo{
         text-align: center;
     }
+
+    .fa-regular {
+        font-size: 30px;
+    }
+    .fa-solid{
+        font-size: 30px;
+    }
 /* header END */
 
 /* main START */
 main{
+    padding-top: 150px;
     width: 80%;
     margin: 50px auto;
 }
@@ -66,6 +83,13 @@ main{
     max-width: 100%;
 }
 
+.top-img{
+    position: absolute;
+
+}
+.top-img:hover{
+    opacity: 0;
+}
 .heart{
     font-size: 50px;
     position: absolute;
@@ -86,6 +110,7 @@ main{
     left: 0px;
     bottom: 150px;
     z-index: 500;
+    padding: 5px;
 }
 
 .info-label{
@@ -93,8 +118,19 @@ main{
     background-color: #008000;
     position: absolute;
     bottom: 150px;
-    left: 40px;
+    left: 50px;
     z-index: 500;
+    padding: 5px;
+}
+
+.info-label-left{
+color: white;
+    background-color: #008000;
+    position: absolute;
+    bottom: 150px;
+    left: 0px;
+    z-index: 500;
+    padding: 5px;
 }
 
 .price{
@@ -115,5 +151,10 @@ footer{
     justify-content: space-between;
     align-items: center;
     min-height: 150px;
+}
+
+.fa-brands{
+    font-size: 30px;
+    margin: 3px;
 }
 /* footer END */
