@@ -67,10 +67,17 @@ main{
 }
 
 .heart{
+    font-size: 50px;
     position: absolute;
     top: 10px;
     right: 0;
     background-color: white;
+    z-index: 600;
+    cursor: pointer;
+}
+
+.heart:hover{
+    color: #ff0000;
 }
 .discount-label{
     color: white;
@@ -78,6 +85,7 @@ main{
     position: absolute;
     left: 0px;
     bottom: 150px;
+    z-index: 500;
 }
 
 .info-label{
@@ -86,6 +94,7 @@ main{
     position: absolute;
     bottom: 150px;
     left: 40px;
+    z-index: 500;
 }
 
 .price{
